@@ -17,6 +17,8 @@ set_property(CACHE FFT_LIB PROPERTY STRINGS avfft fftw3 fftw3f kissfft vdsp)
 
 option(USE_INTERNAL_AVRESAMPLE "Use internal copy of avresample from ffmpeg for input conversion" ON)
 
+set(GTEST_SOURCE_DIR "/Users/robertchristie/googletest/googletest")
+
 include(CMakePushCheckState)
 include(CheckFunctionExists)
 include(CheckSymbolExists)
@@ -64,7 +66,7 @@ if(APPLE)
 endif()
 
 option(BUILD_TOOLS "Build command line tools" OFF)
-option(BUILD_TESTS "Build test suite" ON)
+option(BUILD_TESTS "Build test suite" OFF)
 
 if(CMAKE_COMPILER_IS_GNUCXX)
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")

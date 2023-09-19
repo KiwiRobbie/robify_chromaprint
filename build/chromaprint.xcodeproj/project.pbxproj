@@ -1,0 +1,1813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1E2598D888C5483C930C7D2A /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B6F9412845AF4F2AB41F599F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				FB5921AE0C97F839BA457C89 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				8D83E4685A5C45098629B91F /* PBXTargetDependency */,
+				D7F1EEC0E67F4BC9B9C75316 /* PBXTargetDependency */,
+				8993D37D6D834201A01AF176 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		2D098505E9DC4A918EB60E16 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DFA17D9FCCF1418CB3DCF0E0 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				48163396E53C0BB303F8996D /* Generate CMakeFiles/uninstall */,
+			);
+			dependencies = (
+				77C4000D3F2544F8A7F40E30 /* PBXTargetDependency */,
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		59B8F429AA8C4149A5DA9027 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5B3403F1239F45488D8AC2F9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				951A3E2A7F5369C61077F8BC /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		66F0F4A15CF94DDDBE40D1ED /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DC87F6AD7E29419394B9D965 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				57FFB91912D948A7AA6CCEEE /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		96E6005871F84862BF93789F /* docs */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D5A286AF41884B1ABB9BD21A /* Build configuration list for PBXAggregateTarget "docs" */;
+			buildPhases = (
+				234B58AAE6ADEC2A7DA6F5B1 /* Generate CMakeFiles/docs */,
+			);
+			dependencies = (
+				EB2955EDAC754F679DC1573F /* PBXTargetDependency */,
+			);
+			name = docs;
+			productName = docs;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0B936D5D6E2C4BE1B3CC18C6 /* chromaprint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 495EFA8C90174810961A5969 /* chromaprint.cpp */; };
+		11370E54BD3E4DCAA6A6D300 /* silence_remover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93BCCB5F9BCF41B1BA6B546A /* silence_remover.cpp */; };
+		2F341F3A39164D938989DE46 /* chroma_resampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5CCA1AC9298496BB3AEF4D9 /* chroma_resampler.cpp */; };
+		4522CE08BA224ABAB262DB85 /* resample2.c in Sources */ = {isa = PBXBuildFile; fileRef = 88B52ACEE28D4A1390DB5700 /* resample2.c */; };
+		5799C97E22ED4418963E7942 /* spectrum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D85972F10A9472AA3F9911B /* spectrum.cpp */; };
+		5E2736D1F7D04D739801E4D0 /* fingerprint_calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE9D725E405549EEBAC0DF7E /* fingerprint_calculator.cpp */; };
+		69BCC72A76214E039BF099DC /* fingerprinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A1CDB29654BBAAA1BE86E /* fingerprinter.cpp */; };
+		6E581141B54F468BB31FC51C /* simhash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E710348556F34352BAC7F20C /* simhash.cpp */; };
+		6F131E45E48A409C85A16981 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9EE40C8C00E44D3BDDD783A /* base64.cpp */; };
+		8D3F6ECF5AFF44F9BBDF5885 /* chroma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB610BD00BD842B9BD44F0C3 /* chroma.cpp */; };
+		8DECA809229E4F7A90DD4692 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7224DE5439D046E2849C9A52 /* fft.cpp */; };
+		93DDA9E84EF140DC9B880086 /* fft_lib_vdsp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F5DCA64E0C4D0CBBA32B6F /* fft_lib_vdsp.cpp */; };
+		9753A6F7EE1A4C39862979EA /* fingerprint_compressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED4986C1D6134E54BD4B795E /* fingerprint_compressor.cpp */; };
+		9FFF0A4846834BADB1BF7817 /* chroma_filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86BEE4F2312E4F44AB0B52A3 /* chroma_filter.cpp */; };
+		B58E0E1BBC0A4F10A36E738F /* fingerprinter_configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0781F2BA00B849E49BB38C28 /* fingerprinter_configuration.cpp */; };
+		BC4741B5BE6C456A9EA6C798 /* image_builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6753449DBC4F62A22C28D2 /* image_builder.cpp */; };
+		C03B036D11C84567BA3FCFB7 /* fingerprint_matcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 853CCD4A986C4041B89C5DD1 /* fingerprint_matcher.cpp */; };
+		CFB3A27B89544E59ABDAD080 /* audio_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DB561B3D7254C36A602A26D /* audio_processor.cpp */; };
+		DED8974467A24385B4CE7DF9 /* fingerprint_decompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD27D79BD3F14D328FEBC5E8 /* fingerprint_decompressor.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E9F6E2B4C854375951431AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE784F0BB204F0EB348C631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B8F429AA8C4149A5DA9027;
+			remoteInfo = ZERO_CHECK;
+		};
+		31D41B85BB38419BAD1F6AD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE784F0BB204F0EB348C631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 454DA5A87DCC43CF90A91263;
+			remoteInfo = chromaprint;
+		};
+		399863C2995C4CD88F54C21F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE784F0BB204F0EB348C631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B8F429AA8C4149A5DA9027;
+			remoteInfo = ZERO_CHECK;
+		};
+		44468DCE7CA745D699CCB9D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE784F0BB204F0EB348C631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E2598D888C5483C930C7D2A;
+			remoteInfo = ALL_BUILD;
+		};
+		A23695FC636C48EA99C44E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE784F0BB204F0EB348C631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B97AE9DEB3774ADF8025792B;
+			remoteInfo = chromaprint_objs;
+		};
+		BD553130791E405F8352F69E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE784F0BB204F0EB348C631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B97AE9DEB3774ADF8025792B;
+			remoteInfo = chromaprint_objs;
+		};
+		C4693320C70F4727A81277B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE784F0BB204F0EB348C631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B8F429AA8C4149A5DA9027;
+			remoteInfo = ZERO_CHECK;
+		};
+		CC31527ADBF445468F60D1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE784F0BB204F0EB348C631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B8F429AA8C4149A5DA9027;
+			remoteInfo = ZERO_CHECK;
+		};
+		F3143E8A9013448F864CCD07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE784F0BB204F0EB348C631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B8F429AA8C4149A5DA9027;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00EFFACF2AB3183F00E82897 /* main_info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = main_info.plist; sourceTree = "<group>"; };
+		0781F2BA00B849E49BB38C28 /* fingerprinter_configuration.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fingerprinter_configuration.cpp; path = src/fingerprinter_configuration.cpp; sourceTree = SOURCE_ROOT; };
+		0E1DEA5FB92944FABB9695DD /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		13D80EB5A5A24D99BD8E293A /* simhash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = simhash.h; path = src/simhash.h; sourceTree = SOURCE_ROOT; };
+		15E81611DC684AA8AE8E9EEA /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = build/src/CMakeFiles/chromaprint.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		1D43191ABC714BA9B52E99BC /* gaussian_filter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gaussian_filter.h; path = src/utils/gaussian_filter.h; sourceTree = SOURCE_ROOT; };
+		2DB561B3D7254C36A602A26D /* audio_processor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = audio_processor.cpp; path = src/audio_processor.cpp; sourceTree = SOURCE_ROOT; };
+		495EFA8C90174810961A5969 /* chromaprint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = chromaprint.cpp; path = src/chromaprint.cpp; sourceTree = SOURCE_ROOT; };
+		58AA9EAB3CFB4E1990E4ED4B /* libchromaprint.1.5.1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libchromaprint.1.5.1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E3A1CDB29654BBAAA1BE86E /* fingerprinter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fingerprinter.cpp; path = src/fingerprinter.cpp; sourceTree = SOURCE_ROOT; };
+		7224DE5439D046E2849C9A52 /* fft.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fft.cpp; path = src/fft.cpp; sourceTree = SOURCE_ROOT; };
+		746F537423144C83908CA750 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7B53E2AA77424D7E9D349E00 /* fingerprint_matcher.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fingerprint_matcher.h; path = src/fingerprint_matcher.h; sourceTree = SOURCE_ROOT; };
+		7D85972F10A9472AA3F9911B /* spectrum.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = spectrum.cpp; path = src/spectrum.cpp; sourceTree = SOURCE_ROOT; };
+		7E974BFAE4974EDCAAA74EA5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = build/src/CMakeFiles/chromaprint_objs.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		836FBDE6E0FD4AA2BCF55039 /* gradient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gradient.h; path = src/utils/gradient.h; sourceTree = SOURCE_ROOT; };
+		8437F2F40EF54597871A8F7A /* base64.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = base64.h; path = src/utils/base64.h; sourceTree = SOURCE_ROOT; };
+		853CCD4A986C4041B89C5DD1 /* fingerprint_matcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fingerprint_matcher.cpp; path = src/fingerprint_matcher.cpp; sourceTree = SOURCE_ROOT; };
+		86BEE4F2312E4F44AB0B52A3 /* chroma_filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = chroma_filter.cpp; path = src/chroma_filter.cpp; sourceTree = SOURCE_ROOT; };
+		88B52ACEE28D4A1390DB5700 /* resample2.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = resample2.c; path = src/avresample/resample2.c; sourceTree = SOURCE_ROOT; };
+		93BCCB5F9BCF41B1BA6B546A /* silence_remover.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = silence_remover.cpp; path = src/silence_remover.cpp; sourceTree = SOURCE_ROOT; };
+		9A6753449DBC4F62A22C28D2 /* image_builder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image_builder.cpp; path = src/image_builder.cpp; sourceTree = SOURCE_ROOT; };
+		AD27D79BD3F14D328FEBC5E8 /* fingerprint_decompressor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fingerprint_decompressor.cpp; path = src/fingerprint_decompressor.cpp; sourceTree = SOURCE_ROOT; };
+		AFDC4C3E90CB4B1EB0F369D8 /* Accelerate.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		B1F5DCA64E0C4D0CBBA32B6F /* fft_lib_vdsp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fft_lib_vdsp.cpp; path = src/fft_lib_vdsp.cpp; sourceTree = SOURCE_ROOT; };
+		C0E54D4798AC45479E5EACCC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C652B37F493242869AF86955 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CFB6FC1CD4C0410B97C623B1 /* audio_slicer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = audio_slicer.h; path = src/audio/audio_slicer.h; sourceTree = SOURCE_ROOT; };
+		D3C0725F9B8B41DF8560DBF2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DB610BD00BD842B9BD44F0C3 /* chroma.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = chroma.cpp; path = src/chroma.cpp; sourceTree = SOURCE_ROOT; };
+		E710348556F34352BAC7F20C /* simhash.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = simhash.cpp; path = src/simhash.cpp; sourceTree = SOURCE_ROOT; };
+		E9EE40C8C00E44D3BDDD783A /* base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = src/utils/base64.cpp; sourceTree = SOURCE_ROOT; };
+		EBF9EF0335EF4F9ABD9CFAD3 /* chromaprint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = chromaprint.h; path = src/chromaprint.h; sourceTree = SOURCE_ROOT; };
+		EC43369EB48D4BE597039A3E /* rolling_integral_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = rolling_integral_image.h; path = src/utils/rolling_integral_image.h; sourceTree = SOURCE_ROOT; };
+		ED4986C1D6134E54BD4B795E /* fingerprint_compressor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fingerprint_compressor.cpp; path = src/fingerprint_compressor.cpp; sourceTree = SOURCE_ROOT; };
+		ED6EA67CD5DF4BC7957F35DD /* libchromaprint_objs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libchromaprint_objs.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CCA1AC9298496BB3AEF4D9 /* chroma_resampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = chroma_resampler.cpp; path = src/chroma_resampler.cpp; sourceTree = SOURCE_ROOT; };
+		FE33885840C84859869ABCF4 /* scope_exit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scope_exit.h; path = src/utils/scope_exit.h; sourceTree = SOURCE_ROOT; };
+		FE9D725E405549EEBAC0DF7E /* fingerprint_calculator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fingerprint_calculator.cpp; path = src/fingerprint_calculator.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91AFA839097C4A4997C98D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C6CB0BBCD64B8491745956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		347D763DB47C41CABBFA6D0D /* chromaprint_objs */ = {
+			isa = PBXGroup;
+			children = (
+				F29F15749FC648CBAEADE9AD /* Source Files */,
+				9A25B3E323B241929B51343D /* Header Files */,
+				4D69B4843F3C41F6B9DEC984 /* Resources */,
+				746F537423144C83908CA750 /* CMakeLists.txt */,
+			);
+			name = chromaprint_objs;
+			sourceTree = "<group>";
+		};
+		4D69B4843F3C41F6B9DEC984 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E974BFAE4974EDCAAA74EA5 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5136FB34B25847DBA5AF90A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58AA9EAB3CFB4E1990E4ED4B /* libchromaprint.1.5.1.dylib */,
+				ED6EA67CD5DF4BC7957F35DD /* libchromaprint_objs.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54E95A0DAA944B859CD3DAA4 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5FA87094A86F4440816BDBCC /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				54E95A0DAA944B859CD3DAA4 /* CMake Rules */,
+				0E1DEA5FB92944FABB9695DD /* CMakeLists.txt */,
+			);
+			name = docs;
+			sourceTree = "<group>";
+		};
+		65FC0DB8C2FC47D59538AEB8 /* chromaprint */ = {
+			isa = PBXGroup;
+			children = (
+				C186C313844745E0BB8C795B /* Source Files */,
+				9BCF553564284946A5DA2E80 /* Header Files */,
+				86542BAA5DE64A51B436CD02 /* Resources */,
+				C652B37F493242869AF86955 /* CMakeLists.txt */,
+				00EFFACF2AB3183F00E82897 /* main_info.plist */,
+			);
+			name = chromaprint;
+			sourceTree = "<group>";
+		};
+		7BBE7D35F991421A8844B316 = {
+			isa = PBXGroup;
+			children = (
+				88673B0C0BA14F6B82A5F6E4 /* uninstall */,
+				5FA87094A86F4440816BDBCC /* docs */,
+				842B59D26EF947BF89DF3793 /* ALL_BUILD */,
+				347D763DB47C41CABBFA6D0D /* chromaprint_objs */,
+				65FC0DB8C2FC47D59538AEB8 /* chromaprint */,
+				5136FB34B25847DBA5AF90A4 /* Products */,
+				EB5691F85CB04BDA90566B21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		842B59D26EF947BF89DF3793 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				EAA19868474840BFB437F5A2 /* CMake Rules */,
+				C0E54D4798AC45479E5EACCC /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		86542BAA5DE64A51B436CD02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15E81611DC684AA8AE8E9EEA /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		88673B0C0BA14F6B82A5F6E4 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				DB524DE57BAD471FA0B0BB0D /* CMake Rules */,
+				D3C0725F9B8B41DF8560DBF2 /* CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		9A25B3E323B241929B51343D /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6FC1CD4C0410B97C623B1 /* audio_slicer.h */,
+				7B53E2AA77424D7E9D349E00 /* fingerprint_matcher.h */,
+				13D80EB5A5A24D99BD8E293A /* simhash.h */,
+				8437F2F40EF54597871A8F7A /* base64.h */,
+				1D43191ABC714BA9B52E99BC /* gaussian_filter.h */,
+				836FBDE6E0FD4AA2BCF55039 /* gradient.h */,
+				EC43369EB48D4BE597039A3E /* rolling_integral_image.h */,
+				FE33885840C84859869ABCF4 /* scope_exit.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		9BCF553564284946A5DA2E80 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBF9EF0335EF4F9ABD9CFAD3 /* chromaprint.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C186C313844745E0BB8C795B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				495EFA8C90174810961A5969 /* chromaprint.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DB524DE57BAD471FA0B0BB0D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		EAA19868474840BFB437F5A2 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		EB5691F85CB04BDA90566B21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFDC4C3E90CB4B1EB0F369D8 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F29F15749FC648CBAEADE9AD /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DB561B3D7254C36A602A26D /* audio_processor.cpp */,
+				88B52ACEE28D4A1390DB5700 /* resample2.c */,
+				DB610BD00BD842B9BD44F0C3 /* chroma.cpp */,
+				86BEE4F2312E4F44AB0B52A3 /* chroma_filter.cpp */,
+				F5CCA1AC9298496BB3AEF4D9 /* chroma_resampler.cpp */,
+				7224DE5439D046E2849C9A52 /* fft.cpp */,
+				B1F5DCA64E0C4D0CBBA32B6F /* fft_lib_vdsp.cpp */,
+				FE9D725E405549EEBAC0DF7E /* fingerprint_calculator.cpp */,
+				ED4986C1D6134E54BD4B795E /* fingerprint_compressor.cpp */,
+				AD27D79BD3F14D328FEBC5E8 /* fingerprint_decompressor.cpp */,
+				853CCD4A986C4041B89C5DD1 /* fingerprint_matcher.cpp */,
+				5E3A1CDB29654BBAAA1BE86E /* fingerprinter.cpp */,
+				0781F2BA00B849E49BB38C28 /* fingerprinter_configuration.cpp */,
+				9A6753449DBC4F62A22C28D2 /* image_builder.cpp */,
+				93BCCB5F9BCF41B1BA6B546A /* silence_remover.cpp */,
+				E710348556F34352BAC7F20C /* simhash.cpp */,
+				7D85972F10A9472AA3F9911B /* spectrum.cpp */,
+				E9EE40C8C00E44D3BDDD783A /* base64.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		454DA5A87DCC43CF90A91263 /* chromaprint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80BB6379719451F92BE23A2 /* Build configuration list for PBXNativeTarget "chromaprint" */;
+			buildPhases = (
+				6772ED5A08C34692A1F2ECEC /* Sources */,
+				91AFA839097C4A4997C98D1A /* Frameworks */,
+				6635F200EAD8E07DB51A418F /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				104728FCEB6843289C4C483A /* PBXTargetDependency */,
+				9FEE9647A75D4A0AAFE0EA6C /* PBXTargetDependency */,
+			);
+			name = chromaprint;
+			productName = chromaprint;
+			productReference = 58AA9EAB3CFB4E1990E4ED4B /* libchromaprint.1.5.1.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		B97AE9DEB3774ADF8025792B /* chromaprint_objs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6953F1551C4F4F71A300BD4D /* Build configuration list for PBXNativeTarget "chromaprint_objs" */;
+			buildPhases = (
+				845AA2CCAFCC4E29BB631073 /* Sources */,
+				B0C6CB0BBCD64B8491745956 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C9404965B304FAFA7300720 /* PBXTargetDependency */,
+			);
+			name = chromaprint_objs;
+			productName = chromaprint_objs;
+			productReference = ED6EA67CD5DF4BC7957F35DD /* libchromaprint_objs.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDE784F0BB204F0EB348C631 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = 8BB72F02F5CB4E3EAEA8A375 /* Build configuration list for PBXProject "chromaprint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BBE7D35F991421A8844B316;
+			projectDirPath = /Users/robertchristie/Dev/chromaprint;
+			projectRoot = "";
+			targets = (
+				1E2598D888C5483C930C7D2A /* ALL_BUILD */,
+				59B8F429AA8C4149A5DA9027 /* ZERO_CHECK */,
+				454DA5A87DCC43CF90A91263 /* chromaprint */,
+				B97AE9DEB3774ADF8025792B /* chromaprint_objs */,
+				96E6005871F84862BF93789F /* docs */,
+				66F0F4A15CF94DDDBE40D1ED /* install */,
+				2D098505E9DC4A918EB60E16 /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		234B58AAE6ADEC2A7DA6F5B1 /* Generate CMakeFiles/docs */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/docs";
+			outputPaths = (
+				/Users/robertchristie/Dev/chromaprint/build/CMakeFiles/docs,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  doxygen\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  doxygen\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  doxygen\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  doxygen\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48163396E53C0BB303F8996D /* Generate CMakeFiles/uninstall */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/uninstall";
+			outputPaths = (
+				/Users/robertchristie/Dev/chromaprint/build/CMakeFiles/uninstall,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -P /Users/robertchristie/Dev/chromaprint/build/cmake_uninstall.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -P /Users/robertchristie/Dev/chromaprint/build/cmake_uninstall.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -P /Users/robertchristie/Dev/chromaprint/build/cmake_uninstall.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -P /Users/robertchristie/Dev/chromaprint/build/cmake_uninstall.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6635F200EAD8E07DB51A418F /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build/src\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -E cmake_symlink_library /Users/robertchristie/Dev/chromaprint/build/src/Debug${EFFECTIVE_PLATFORM_NAME}/libchromaprint.1.5.1.dylib /Users/robertchristie/Dev/chromaprint/build/src/Debug${EFFECTIVE_PLATFORM_NAME}/libchromaprint.1.dylib /Users/robertchristie/Dev/chromaprint/build/src/Debug${EFFECTIVE_PLATFORM_NAME}/libchromaprint.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build/src\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -E cmake_symlink_library /Users/robertchristie/Dev/chromaprint/build/src/Release${EFFECTIVE_PLATFORM_NAME}/libchromaprint.1.5.1.dylib /Users/robertchristie/Dev/chromaprint/build/src/Release${EFFECTIVE_PLATFORM_NAME}/libchromaprint.1.dylib /Users/robertchristie/Dev/chromaprint/build/src/Release${EFFECTIVE_PLATFORM_NAME}/libchromaprint.dylib\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build/src\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -E cmake_symlink_library /Users/robertchristie/Dev/chromaprint/build/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libchromaprint.1.5.1.dylib /Users/robertchristie/Dev/chromaprint/build/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libchromaprint.1.dylib /Users/robertchristie/Dev/chromaprint/build/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libchromaprint.dylib\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build/src\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -E cmake_symlink_library /Users/robertchristie/Dev/chromaprint/build/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libchromaprint.1.5.1.dylib /Users/robertchristie/Dev/chromaprint/build/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libchromaprint.1.dylib /Users/robertchristie/Dev/chromaprint/build/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libchromaprint.dylib\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  /usr/local/Cellar/cmake/3.27.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		951A3E2A7F5369C61077F8BC /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/robertchristie/Dev/chromaprint/build/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  make -f /Users/robertchristie/Dev/chromaprint/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  make -f /Users/robertchristie/Dev/chromaprint/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  make -f /Users/robertchristie/Dev/chromaprint/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  make -f /Users/robertchristie/Dev/chromaprint/build/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB5921AE0C97F839BA457C89 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/robertchristie/Dev/chromaprint/build/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/robertchristie/Dev/chromaprint/build\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6772ED5A08C34692A1F2ECEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B936D5D6E2C4BE1B3CC18C6 /* chromaprint.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845AA2CCAFCC4E29BB631073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB3A27B89544E59ABDAD080 /* audio_processor.cpp in Sources */,
+				4522CE08BA224ABAB262DB85 /* resample2.c in Sources */,
+				8D3F6ECF5AFF44F9BBDF5885 /* chroma.cpp in Sources */,
+				9FFF0A4846834BADB1BF7817 /* chroma_filter.cpp in Sources */,
+				2F341F3A39164D938989DE46 /* chroma_resampler.cpp in Sources */,
+				8DECA809229E4F7A90DD4692 /* fft.cpp in Sources */,
+				93DDA9E84EF140DC9B880086 /* fft_lib_vdsp.cpp in Sources */,
+				5E2736D1F7D04D739801E4D0 /* fingerprint_calculator.cpp in Sources */,
+				9753A6F7EE1A4C39862979EA /* fingerprint_compressor.cpp in Sources */,
+				DED8974467A24385B4CE7DF9 /* fingerprint_decompressor.cpp in Sources */,
+				C03B036D11C84567BA3FCFB7 /* fingerprint_matcher.cpp in Sources */,
+				69BCC72A76214E039BF099DC /* fingerprinter.cpp in Sources */,
+				B58E0E1BBC0A4F10A36E738F /* fingerprinter_configuration.cpp in Sources */,
+				BC4741B5BE6C456A9EA6C798 /* image_builder.cpp in Sources */,
+				11370E54BD3E4DCAA6A6D300 /* silence_remover.cpp in Sources */,
+				6E581141B54F468BB31FC51C /* simhash.cpp in Sources */,
+				5799C97E22ED4418963E7942 /* spectrum.cpp in Sources */,
+				6F131E45E48A409C85A16981 /* base64.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		104728FCEB6843289C4C483A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B97AE9DEB3774ADF8025792B /* chromaprint_objs */;
+			targetProxy = A23695FC636C48EA99C44E66 /* PBXContainerItemProxy */;
+		};
+		57FFB91912D948A7AA6CCEEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E2598D888C5483C930C7D2A /* ALL_BUILD */;
+			targetProxy = 44468DCE7CA745D699CCB9D1 /* PBXContainerItemProxy */;
+		};
+		6C9404965B304FAFA7300720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59B8F429AA8C4149A5DA9027 /* ZERO_CHECK */;
+			targetProxy = F3143E8A9013448F864CCD07 /* PBXContainerItemProxy */;
+		};
+		77C4000D3F2544F8A7F40E30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59B8F429AA8C4149A5DA9027 /* ZERO_CHECK */;
+			targetProxy = C4693320C70F4727A81277B4 /* PBXContainerItemProxy */;
+		};
+		8993D37D6D834201A01AF176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59B8F429AA8C4149A5DA9027 /* ZERO_CHECK */;
+			targetProxy = CC31527ADBF445468F60D1C1 /* PBXContainerItemProxy */;
+		};
+		8D83E4685A5C45098629B91F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B97AE9DEB3774ADF8025792B /* chromaprint_objs */;
+			targetProxy = BD553130791E405F8352F69E /* PBXContainerItemProxy */;
+		};
+		9FEE9647A75D4A0AAFE0EA6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59B8F429AA8C4149A5DA9027 /* ZERO_CHECK */;
+			targetProxy = 2E9F6E2B4C854375951431AC /* PBXContainerItemProxy */;
+		};
+		D7F1EEC0E67F4BC9B9C75316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 454DA5A87DCC43CF90A91263 /* chromaprint */;
+			targetProxy = 31D41B85BB38419BAD1F6AD4 /* PBXContainerItemProxy */;
+		};
+		EB2955EDAC754F679DC1573F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59B8F429AA8C4149A5DA9027 /* ZERO_CHECK */;
+			targetProxy = 399863C2995C4CD88F54C21F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00C9EED1C6AC45EBA3C2F580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		060C71B365C84DBDAC713612 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					HAVE_CONFIG_H,
+					_SCL_SECURE_NO_WARNINGS,
+					_USE_MATH_DEFINES,
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/robertchristie/Dev/chromaprint/build,
+					/Users/robertchristie/Dev/chromaprint/src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = chromaprint_objs;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		1310D602546C43F49226352B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		1FC1F4A227F54CF685D49BB0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = JXVJEC9UCV;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/robertchristie/Dev/chromaprint/build/build;
+			};
+			name = MinSizeRel;
+		};
+		368D1B39CD5348C6AE1A0251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		3F00E2CC8B6F47E4A6CD2DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/robertchristie/Dev/chromaprint/build/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXVJEC9UCV;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.5.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CHROMAPRINT_API_EXPORTS,
+					HAVE_CONFIG_H,
+					_SCL_SECURE_NO_WARNINGS,
+					_USE_MATH_DEFINES,
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/robertchristie/Dev/chromaprint/build,
+					/Users/robertchristie/Dev/chromaprint/src,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/main_info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = DYNAMIC;
+				MARKETING_VERSION = 0.0.1;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-fvisibility=hidden",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"-install_name",
+					"@rpath/libchromaprint.1.dylib",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/resample2.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fft_lib_vdsp.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/audio_processor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma_resampler.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma_filter.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/spectrum.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fft.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprinter.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/image_builder.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/simhash.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/silence_remover.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_calculator.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_compressor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_decompressor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprinter_configuration.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_matcher.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/base64.o",
+					"-lm",
+					"-Xlinker",
+					"-framework",
+					"-Xlinker",
+					Accelerate,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robify.flutter-chromaprint";
+				PRODUCT_NAME = chromaprint.1.5.1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		465A26F8803F46C8A31CAE22 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		51CB7982F94840B1AA622E6E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		523B01DCBA41456797A30FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5458FE79B4714E5BBD7FEF96 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = docs;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		6596F9917C4B4FB7A9F86108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		8341874BCDAD42DCB4A7592A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/robertchristie/Dev/chromaprint/build/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXVJEC9UCV;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.5.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CHROMAPRINT_API_EXPORTS,
+					HAVE_CONFIG_H,
+					_SCL_SECURE_NO_WARNINGS,
+					_USE_MATH_DEFINES,
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/robertchristie/Dev/chromaprint/build,
+					/Users/robertchristie/Dev/chromaprint/src,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/main_info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = DYNAMIC;
+				MARKETING_VERSION = 0.0.1;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"-install_name",
+					"@rpath/libchromaprint.1.dylib",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/resample2.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fft_lib_vdsp.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/audio_processor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma_resampler.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma_filter.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/spectrum.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fft.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprinter.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/image_builder.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/simhash.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/silence_remover.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_calculator.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_compressor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_decompressor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprinter_configuration.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_matcher.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/base64.o",
+					"-lm",
+					"-Xlinker",
+					"-framework",
+					"-Xlinker",
+					Accelerate,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robify.flutter-chromaprint";
+				PRODUCT_NAME = chromaprint.1.5.1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		858498328E0A47CC82A2F669 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		8A154AD6CB7044DCAEFDBD44 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		91BD25B2DAC14D068EE82DDD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/robertchristie/Dev/chromaprint/build/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXVJEC9UCV;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.5.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CHROMAPRINT_API_EXPORTS,
+					HAVE_CONFIG_H,
+					_SCL_SECURE_NO_WARNINGS,
+					_USE_MATH_DEFINES,
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/robertchristie/Dev/chromaprint/build,
+					/Users/robertchristie/Dev/chromaprint/src,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/main_info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = DYNAMIC;
+				MARKETING_VERSION = 0.0.1;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"-install_name",
+					"@rpath/libchromaprint.1.dylib",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/resample2.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fft_lib_vdsp.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/audio_processor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma_resampler.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma_filter.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/spectrum.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fft.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprinter.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/image_builder.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/simhash.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/silence_remover.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_calculator.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_compressor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_decompressor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprinter_configuration.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_matcher.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/base64.o",
+					"-lm",
+					"-Xlinker",
+					"-framework",
+					"-Xlinker",
+					Accelerate,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robify.flutter-chromaprint";
+				PRODUCT_NAME = chromaprint.1.5.1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		95513C347C774D548FF1B37E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		9CA3BA4E3A4740F4AD688CFE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					HAVE_CONFIG_H,
+					_SCL_SECURE_NO_WARNINGS,
+					_USE_MATH_DEFINES,
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/robertchristie/Dev/chromaprint/build,
+					/Users/robertchristie/Dev/chromaprint/src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = chromaprint_objs;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		9E1B6DFC572F4D268B42CD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = docs;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		A399D6AC96B441C0ABD29F08 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = JXVJEC9UCV;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/robertchristie/Dev/chromaprint/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		A87E9B6379F541B6BD11DBA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		B1C7F6158B934E12B232903B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = JXVJEC9UCV;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/robertchristie/Dev/chromaprint/build/build;
+			};
+			name = Debug;
+		};
+		B8C0845D1C854046A284DF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = docs;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		D24BA6E6418C43C192126996 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = docs;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		D82BB5575FDF4A78AB8B7A92 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		DC2F238829D0430F916D05A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					HAVE_CONFIG_H,
+					_SCL_SECURE_NO_WARNINGS,
+					_USE_MATH_DEFINES,
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/robertchristie/Dev/chromaprint/build,
+					/Users/robertchristie/Dev/chromaprint/src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-fvisibility=hidden",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = chromaprint_objs;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		DC355DBAC4FA41FEBF9CA78A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/robertchristie/Dev/chromaprint/build/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXVJEC9UCV;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.5.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CHROMAPRINT_API_EXPORTS,
+					HAVE_CONFIG_H,
+					_SCL_SECURE_NO_WARNINGS,
+					_USE_MATH_DEFINES,
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/robertchristie/Dev/chromaprint/build,
+					/Users/robertchristie/Dev/chromaprint/src,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/main_info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = DYNAMIC;
+				MARKETING_VERSION = 0.0.1;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"-install_name",
+					"@rpath/libchromaprint.1.dylib",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/resample2.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fft_lib_vdsp.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/audio_processor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma_resampler.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/chroma_filter.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/spectrum.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fft.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprinter.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/image_builder.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/simhash.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/silence_remover.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_calculator.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_compressor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_decompressor.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprinter_configuration.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/fingerprint_matcher.o",
+					"/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/base64.o",
+					"-lm",
+					"-Xlinker",
+					"-framework",
+					"-Xlinker",
+					Accelerate,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robify.flutter-chromaprint";
+				PRODUCT_NAME = chromaprint.1.5.1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		E874D645DE1046DEAD9652E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = JXVJEC9UCV;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/robertchristie/Dev/chromaprint/build/build;
+			};
+			name = Release;
+		};
+		E9627228FE48477A9D1BC285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					HAVE_CONFIG_H,
+					_SCL_SECURE_NO_WARNINGS,
+					_USE_MATH_DEFINES,
+					__STDC_LIMIT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/robertchristie/Dev/chromaprint/build,
+					/Users/robertchristie/Dev/chromaprint/src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = chromaprint_objs;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/robertchristie/Dev/chromaprint/build/build/chromaprint_objs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		ECEA79D938EB458ABDDF3240 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		ED3A39666AA64945AC2412B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		F2F6CD0B2D1B4C81A00EDD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		FC163D9B0337439F83ECA2BD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B3403F1239F45488D8AC2F9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87E9B6379F541B6BD11DBA5 /* Debug */,
+				00C9EED1C6AC45EBA3C2F580 /* Release */,
+				465A26F8803F46C8A31CAE22 /* MinSizeRel */,
+				D82BB5575FDF4A78AB8B7A92 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6953F1551C4F4F71A300BD4D /* Build configuration list for PBXNativeTarget "chromaprint_objs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC2F238829D0430F916D05A3 /* Debug */,
+				E9627228FE48477A9D1BC285 /* Release */,
+				060C71B365C84DBDAC713612 /* MinSizeRel */,
+				9CA3BA4E3A4740F4AD688CFE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8BB72F02F5CB4E3EAEA8A375 /* Build configuration list for PBXProject "chromaprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C7F6158B934E12B232903B /* Debug */,
+				E874D645DE1046DEAD9652E5 /* Release */,
+				1FC1F4A227F54CF685D49BB0 /* MinSizeRel */,
+				A399D6AC96B441C0ABD29F08 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B6F9412845AF4F2AB41F599F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523B01DCBA41456797A30FDF /* Debug */,
+				6596F9917C4B4FB7A9F86108 /* Release */,
+				858498328E0A47CC82A2F669 /* MinSizeRel */,
+				FC163D9B0337439F83ECA2BD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B80BB6379719451F92BE23A2 /* Build configuration list for PBXNativeTarget "chromaprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F00E2CC8B6F47E4A6CD2DF5 /* Debug */,
+				8341874BCDAD42DCB4A7592A /* Release */,
+				DC355DBAC4FA41FEBF9CA78A /* MinSizeRel */,
+				91BD25B2DAC14D068EE82DDD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D5A286AF41884B1ABB9BD21A /* Build configuration list for PBXAggregateTarget "docs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1B6DFC572F4D268B42CD0E /* Debug */,
+				B8C0845D1C854046A284DF77 /* Release */,
+				5458FE79B4714E5BBD7FEF96 /* MinSizeRel */,
+				D24BA6E6418C43C192126996 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC87F6AD7E29419394B9D965 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1310D602546C43F49226352B /* Debug */,
+				ED3A39666AA64945AC2412B1 /* Release */,
+				ECEA79D938EB458ABDDF3240 /* MinSizeRel */,
+				51CB7982F94840B1AA622E6E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DFA17D9FCCF1418CB3DCF0E0 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368D1B39CD5348C6AE1A0251 /* Debug */,
+				F2F6CD0B2D1B4C81A00EDD06 /* Release */,
+				95513C347C774D548FF1B37E /* MinSizeRel */,
+				8A154AD6CB7044DCAEFDBD44 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDE784F0BB204F0EB348C631 /* Project object */;
+}

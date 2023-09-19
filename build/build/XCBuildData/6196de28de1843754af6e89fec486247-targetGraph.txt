@@ -1,0 +1,13 @@
+Target dependency graph (5 targets)
+ZERO_CHECK in chromaprint, no dependencies
+chromaprint_objs in chromaprint, depends on:
+ZERO_CHECK in chromaprint (explicit)
+chromaprint in chromaprint, depends on:
+chromaprint_objs in chromaprint (explicit)
+ZERO_CHECK in chromaprint (explicit)
+ALL_BUILD in chromaprint, depends on:
+chromaprint_objs in chromaprint (explicit)
+chromaprint in chromaprint (explicit)
+ZERO_CHECK in chromaprint (explicit)
+install in chromaprint, depends on:
+ALL_BUILD in chromaprint (explicit)

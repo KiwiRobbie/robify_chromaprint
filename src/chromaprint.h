@@ -52,27 +52,6 @@
  * You should check the return values in an actual code.
  */
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-#if (defined(_WIN32) || defined(_WIN64))
-#	ifdef CHROMAPRINT_NODLL
-#		define CHROMAPRINT_API
-#	else
-#		ifdef CHROMAPRINT_API_EXPORTS
-#			define CHROMAPRINT_API __declspec(dllexport)
-#		else
-#			define CHROMAPRINT_API __declspec(dllimport)
-#		endif
-#	endif
-#else
-#   if __GNUC__ >= 4
-#       define CHROMAPRINT_API __attribute__ ((visibility("default")))
-#   else
-#       define CHROMAPRINT_API
-#   endif
-#endif
 
 #include <stdint.h>
 
@@ -98,7 +77,7 @@ enum ChromaprintAlgorithm {
 /**
  * Return the version number of Chromaprint.
  */
-CHROMAPRINT_API const char *chromaprint_get_version(void);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) const char *chromaprint_get_version(void);
 
 /**
  * Allocate and initialize the Chromaprint context.
@@ -112,7 +91,7 @@ CHROMAPRINT_API const char *chromaprint_get_version(void);
  *
  * @return ctx Chromaprint context pointer
  */
-CHROMAPRINT_API ChromaprintContext *chromaprint_new(int algorithm);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) ChromaprintContext *chromaprint_new(int algorithm);
 
 /**
  * Deallocate the Chromaprint context.
@@ -123,14 +102,14 @@ CHROMAPRINT_API ChromaprintContext *chromaprint_new(int algorithm);
  *
  * @param[in] ctx Chromaprint context pointer
  */
-CHROMAPRINT_API void chromaprint_free(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) void chromaprint_free(ChromaprintContext *ctx);
 
 /**
  * Return the fingerprint algorithm this context is configured to use.
  * @param[in] ctx Chromaprint context pointer
  * @return current algorithm version
  */
-CHROMAPRINT_API int chromaprint_get_algorithm(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_algorithm(ChromaprintContext *ctx);
 
 /**
  * Set a configuration option for the selected fingerprint algorithm.
@@ -147,7 +126,7 @@ CHROMAPRINT_API int chromaprint_get_algorithm(ChromaprintContext *ctx);
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_set_option(ChromaprintContext *ctx, const char *name, int value);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_set_option(ChromaprintContext *ctx, const char *name, int value);
 
 /**
  * Get the number of channels that is internally used for fingerprinting.
@@ -160,7 +139,7 @@ CHROMAPRINT_API int chromaprint_set_option(ChromaprintContext *ctx, const char *
  *
  * @return number of channels
  */
-CHROMAPRINT_API int chromaprint_get_num_channels(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_num_channels(ChromaprintContext *ctx);
 
 /**
  * Get the sampling rate that is internally used for fingerprinting.
@@ -173,7 +152,7 @@ CHROMAPRINT_API int chromaprint_get_num_channels(ChromaprintContext *ctx);
  *
  * @return sampling rate
  */
-CHROMAPRINT_API int chromaprint_get_sample_rate(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_sample_rate(ChromaprintContext *ctx);
 
 /**
  * Get the duration of one item in the raw fingerprint in samples.
@@ -182,7 +161,7 @@ CHROMAPRINT_API int chromaprint_get_sample_rate(ChromaprintContext *ctx);
  *
  * @return duration in samples
  */
-CHROMAPRINT_API int chromaprint_get_item_duration(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_item_duration(ChromaprintContext *ctx);
 
 /**
  * Get the duration of one item in the raw fingerprint in milliseconds.
@@ -191,7 +170,7 @@ CHROMAPRINT_API int chromaprint_get_item_duration(ChromaprintContext *ctx);
  *
  * @return duration in milliseconds
  */
-CHROMAPRINT_API int chromaprint_get_item_duration_ms(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_item_duration_ms(ChromaprintContext *ctx);
 
 /**
  * Get the duration of internal buffers that the fingerprinting algorithm uses.
@@ -200,7 +179,7 @@ CHROMAPRINT_API int chromaprint_get_item_duration_ms(ChromaprintContext *ctx);
  *
  * @return duration in samples
  */
-CHROMAPRINT_API int chromaprint_get_delay(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_delay(ChromaprintContext *ctx);
 
 /**
  * Get the duration of internal buffers that the fingerprinting algorithm uses.
@@ -209,7 +188,7 @@ CHROMAPRINT_API int chromaprint_get_delay(ChromaprintContext *ctx);
  *
  * @return duration in milliseconds
  */
-CHROMAPRINT_API int chromaprint_get_delay_ms(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_delay_ms(ChromaprintContext *ctx);
 
 /**
  * Restart the computation of a fingerprint with a new audio stream.
@@ -220,7 +199,7 @@ CHROMAPRINT_API int chromaprint_get_delay_ms(ChromaprintContext *ctx);
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_start(ChromaprintContext *ctx, int sample_rate, int num_channels);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_start(ChromaprintContext *ctx, int sample_rate, int num_channels);
 
 /**
  * Send audio data to the fingerprint calculator.
@@ -232,7 +211,7 @@ CHROMAPRINT_API int chromaprint_start(ChromaprintContext *ctx, int sample_rate, 
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_feed(ChromaprintContext *ctx, const int16_t *data, int size);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_feed(ChromaprintContext *ctx, const int16_t *data, int size);
 
 /**
  * Process any remaining buffered audio data.
@@ -241,7 +220,7 @@ CHROMAPRINT_API int chromaprint_feed(ChromaprintContext *ctx, const int16_t *dat
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_finish(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_finish(ChromaprintContext *ctx);
 
 /**
  * Return the calculated fingerprint as a compressed string.
@@ -255,7 +234,7 @@ CHROMAPRINT_API int chromaprint_finish(ChromaprintContext *ctx);
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_get_fingerprint(ChromaprintContext *ctx, char **fingerprint);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_fingerprint(ChromaprintContext *ctx, char **fingerprint);
 
 /**
  * Return the calculated fingerprint as an array of 32-bit integers.
@@ -270,7 +249,7 @@ CHROMAPRINT_API int chromaprint_get_fingerprint(ChromaprintContext *ctx, char **
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_get_raw_fingerprint(ChromaprintContext *ctx, uint32_t **fingerprint, int *size);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_raw_fingerprint(ChromaprintContext *ctx, uint32_t **fingerprint, int *size);
 
 /**
  * Return the length of the current raw fingerprint.
@@ -280,7 +259,7 @@ CHROMAPRINT_API int chromaprint_get_raw_fingerprint(ChromaprintContext *ctx, uin
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_get_raw_fingerprint_size(ChromaprintContext *ctx, int *size);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_raw_fingerprint_size(ChromaprintContext *ctx, int *size);
 
 /**
  * Return 32-bit hash of the calculated fingerprint.
@@ -292,7 +271,7 @@ CHROMAPRINT_API int chromaprint_get_raw_fingerprint_size(ChromaprintContext *ctx
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_get_fingerprint_hash(ChromaprintContext *ctx, uint32_t *hash);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_get_fingerprint_hash(ChromaprintContext *ctx, uint32_t *hash);
 
 /**
  * Clear the current fingerprint, but allow more data to be processed.
@@ -305,7 +284,7 @@ CHROMAPRINT_API int chromaprint_get_fingerprint_hash(ChromaprintContext *ctx, ui
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_clear_fingerprint(ChromaprintContext *ctx);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_clear_fingerprint(ChromaprintContext *ctx);
 
 /**
  * Compress and optionally base64-encode a raw fingerprint
@@ -328,7 +307,7 @@ CHROMAPRINT_API int chromaprint_clear_fingerprint(ChromaprintContext *ctx);
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_encode_fingerprint(const uint32_t *fp, int size, int algorithm, char **encoded_fp, int *encoded_size, int base64);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_encode_fingerprint(const uint32_t *fp, int size, int algorithm, char **encoded_fp, int *encoded_size, int base64);
 
 /**
  * Uncompress and optionally base64-decode an encoded fingerprint
@@ -349,7 +328,7 @@ CHROMAPRINT_API int chromaprint_encode_fingerprint(const uint32_t *fp, int size,
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_decode_fingerprint(const char *encoded_fp, int encoded_size, uint32_t **fp, int *size, int *algorithm, int base64);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_decode_fingerprint(const char *encoded_fp, int encoded_size, uint32_t **fp, int *size, int *algorithm, int base64);
 
 /**
  * Generate a single 32-bit hash for a raw fingerprint.
@@ -371,17 +350,15 @@ CHROMAPRINT_API int chromaprint_decode_fingerprint(const char *encoded_fp, int e
  *
  * @return 0 on error, 1 on success
  */
-CHROMAPRINT_API int chromaprint_hash_fingerprint(const uint32_t *fp, int size, uint32_t *hash);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) int chromaprint_hash_fingerprint(const uint32_t *fp, int size, uint32_t *hash);
 
 /**
  * Free memory allocated by any function from the Chromaprint API.
  *
  * @param ptr pointer to be deallocated
  */
-CHROMAPRINT_API void chromaprint_dealloc(void *ptr);
+extern "C" __attribute__((visibility("default"))) __attribute__((used)) void chromaprint_dealloc(void *ptr);
 
-#ifdef __cplusplus
-}
-#endif
+
 
 #endif

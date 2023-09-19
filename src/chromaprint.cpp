@@ -58,7 +58,7 @@ ChromaprintContext *chromaprint_new(int algorithm)
 	return new ChromaprintContextPrivate(algorithm);
 }
 
-void chromaprint_free(ChromaprintContext *ctx)
+ void chromaprint_free(ChromaprintContext *ctx)
 {
 	if (ctx) {
 		delete ctx;
